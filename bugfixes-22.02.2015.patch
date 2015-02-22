@@ -1,0 +1,28 @@
+diff -aur projectm.old/src/libprojectM/Renderer/Renderer.cpp projectm.new/src/libprojectM/Renderer/Renderer.cpp
+--- projectm.old/src/libprojectM/Renderer/Renderer.cpp	2012-05-20 05:43:26.000000000 +0200
++++ projectm.new/src/libprojectM/Renderer/Renderer.cpp	2015-02-22 22:00:28.703352562 +0100
+@@ -606,11 +606,12 @@
+ 	//glScalef(this->vw*.003,this->vh*.004,0);
+ 
+ 
+-	glRasterPos2f(0.01, 0.01);
++	glRasterPos2f(0.01, 0.05);
+ 
+ 	title_font->FaceSize((unsigned) (12 * (this->vh / 512.0)));
+ 	if (this->noSwitch)
+ 		title_font->Render("[LOCKED]  ");
++	glRasterPos2f(0.01, 0.01);
+ 	title_font->FaceSize((unsigned) (20 * (this->vh / 512.0)));
+ 
+ 	title_font->Render(this->presetName().c_str());
+@@ -691,8 +692,8 @@
+ 	glTranslatef(0.01, 1, 0);
+ 	glRasterPos2f(0, -.05 + offset);
+ 	other_font->Render(this->correction ? "  aspect: corrected" : "  aspect: stretched");
+-	sprintf(buffer, " (%f)", this->aspect);
+-	other_font->Render(buffer);
++	//sprintf(buffer, " (%f)", this->aspect);
++	//other_font->Render(buffer);
+ 
+ 	glRasterPos2f(0, -.09 + offset);
+ 	other_font->FaceSize((unsigned) (18 * (vh / 512.0)));
