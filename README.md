@@ -1,10 +1,13 @@
 # projectM-bugfixes
 
-Patches for projectM to fix minor bugs and/or features.
+Patches for projectM to fix text rendering bugs.
 
-Patches:
+bugfixes-22.02.2015.patch
 
-1. bugfixes-22.02.2015.patch - Patch to render stats and lock preset text correctly.
+Usage:
+
+install abs with pacman and copy the projectm folder from community repo (see arch wiki abs docs).
+edit the pkbuild to include this patch. then makepkg.
 
 
 Cheers
