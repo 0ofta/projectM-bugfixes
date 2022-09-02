@@ -1,4 +1,4 @@
-# projectM-bugfixes
+# projectM-bugfixes [!!THESE BUGFIXES ARE NO LONGER NEEDED, AS THE LATEST VERSION OF PROJECTM HAS FIXED IT!!]
 
 Patch for projectM to fix text rendering bugs.
 
